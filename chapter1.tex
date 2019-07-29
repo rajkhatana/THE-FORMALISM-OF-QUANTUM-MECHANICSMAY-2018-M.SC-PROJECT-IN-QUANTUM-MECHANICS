@@ -1,0 +1,132 @@
+\chapter{\textcolor{blue}{Introduction}}
+Quantum mechanical systems are governed by Schrodinger's equation.
+
+$$i\hbar\frac{\partial{\psi}}{\partial{t}}=-\frac{{\hbar}^2}{2m}\frac{{\partial}^2{\psi}}{\partial{x}^2}+V\psi.$$
+
+
+The harmonic oscillator problem refers to solving the Schrodinger equation with the potential
+$V(x) = \frac 1 2 k x^2$ (corresponding to the potential energy of a classical harmonic oscillator).
+The Schrodinger equation is a partial differential equation. The method of separation of variables
+reduces it to a simpler equation known as the time independent Schrodinger equation. 
+
+$$-\frac{{\hbar}^2}{2m}\frac{{d}^2{\psi}}{d{x}^2}+V\psi=E\psi.$$
+
+Solutions of this time independent equation (multiplied by a time varying phase factor) are known as stationary states. The stationary states are states of definite total energy. Moreover, for such states, the expectation value of any dynamical variable is constant in time. 
+
+In quantum mechanics, physical observables (like position, momentum, angular momentum, etc)
+ are represented by operators which must be hermitian. Problem 1(3.3) reduces the standard
+ condition for an operator to be Hermitian to a slightly simpler sufficient condition.
+
+When the operators for two observables do not commute, such observables are called
+incompatible observables. For such observables there is an unavoidable uncertainty in the values the observables can simultaneously take. This minimum uncertainty is made precise in the 
+uncertainty principle.
+ 
+For the harmonic oscillator, among the various stationary states, only the ground state (the state
+of lowest energy) hits the uncertainty limit. However, there are linear combinations of the stationary states (along with their time varying phase factors)  that hit the uncertainty limit.
+Such states are called coherent states. This topic is treated in Problem 10(3.35).\\
+  "The other problem also deal with closely related topics."
+ 
+\newpage
+\section{Definitions:-}
+\subsection{Wave function:-}
+\hspace*{5cm} ``wave function" is a mathematical model(or representation) of a given wave. A ``function" is represented by the symbol f(x). It can be a function of distance (x), time (t), space (r), etc. and is usually represented by an equation. If the equation represents a wave, then the function is a wave function.
+For example, a simple wave with constant amplitude and varying in time can be described by: $Asin(t)$. It's wave function would be $f(t)=Asin(t)$. You can evaluate it over some interval, by integrating over the interval.
+\subsection{Bra-ket Notation:-}
+ \hspace*{5cm} A state vector is denoted by a ket, $\ket{\alpha}$, which contains complete information about the physical state.\\
+ Dirac defined something called a bra vector, designated by $ \bra{\alpha} $. This is not a ket, and does not belong in ket space e.g.  $ \bra{\alpha}+\bra{\beta}$ has no meaning. However, we assume for every ket $\ket{\beta}$, there exists a bra labeled $\bra{\beta}$. The bra $\bra{\alpha}$ is said to be the dual of the ket $\ket{\alpha}$.\\
+ The symbol  $ <\alpha \vert \beta> $ represents the inner product of the ket $\ket{\alpha}$ with $\bra{\beta}$.
+ 
+\subsection{Hilbert Space and inner product:-}
+Let $L^{2}(a,b)$ be the set of functions\\
+such that $$\int_{a}^{b}{|f(x)|}^2{dx}$$
+exist and it is finite\Big($\int_{a}^{b}{|f(x)|}^2{dx}< \infty$\Big) then f(x) is called square-integrable function.\\
+Set of all square-integrable function in specified interval is called Hilbert Space.\\
+If f and g both are in Hilbert Space then linear combination of f and g also in Hilbert Space.\\
+If f and g both are square-integrable then inner product is guaranteed to exist.\\
+Then there is an inner product defined on $L^{2}(a,b)$ by
+$$\Braket{f|g}=\int_{a}^{b}{f(x)}^{*}{g(x)}{dx}$$
+and
+$$\Braket{f|g}=\int_{a}^{b}{f(x)}^{*}{g(x)}{dx}=\Big(\int_{a}^{b}{f(x)}{g(x)}^{*}{dx}\Big)^{*}={\Braket{g|f}}^{*}$$
+$$\Braket{f|g}=\Braket{g|f}^{*}.$$
+Inner product of f(x) with itself,
+$$\Braket{f|f}=\int_{a}^{b}{f(x)}^{*}{f(x)}{dx}=\int_{a}^{b}{|f(x)|}^2{dx}$$
+$\Braket{f|f}=0$ if $f(x)=0$.\\
+If $\Braket{f|f}=1$ then f is called normalized and,\\
+if $\braket{f|g}=0$ then f and g are called orthogonal \\ 
+ and if $\Braket{f|f}=1$ ,$\Braket{g|g}=1$ and $\braket{f|g}=0$ then f and g called orthonormal. \\
+\textbf{ Schwarz inequality:-}\\
+$$\Big|\int_{a}^{b}{f(x)}^{*}{g(x)}{dx}\Big|\leq \sqrt{\int_{a}^{b}{|f(x)|}^2{dx}\int_{a}^{b}{|g(x)|}^2{dx}}$$
+or$$|\Braket{f|g}|\leq\sqrt{|\Braket{f|f}||\Braket{g|g}|}$$
+\subsection{Expectation value:-}
+\hspace*{5cm} The expectation value of observable Q(x,p) in inner product notation is 
+$$\Braket{Q}=\int {\psi}^{*}\hat{Q}\psi{dx}=\Braket{\psi|\hat{Q}\psi}.$$
+Here $\psi$ is wave function.
+\subsection{Dirac delta function:-}
+$$\delta(t)=\begin{cases}
+0 &{if~t\neq{0},}\\
+{\infty} &{if~t=0.}
+\end{cases}$$
+
+with $$\int_{-\infty}^{\infty}\delta(t)dt=1.$$
+Most important property of the delta function is $$\int_{-\infty}^{\infty}f(t)\delta(t-t_{0})\delta(t)=f(t_{0})$$
+\subsection{Hermition Operators:-}
+\hspace*{6cm} operator $\hat{Q}$ is called Hermitian if $\Braket{f|\hat{Q}f}=\Braket{\hat{Q}f|f}$ for all g(x)
+\\or $\Braket{f|\hat{Q}g}=\Braket{\hat{Q}f|g}$ for all f(x)and g(x) in Hilbert space.\\
+
+\textcolor{blue}{ \textbf{PROBLEM 1(3.3):-} Show that if $\Braket{h|\hat{Q}h}=\Braket{\hat{Q}h|h}$ for all fuction h (in Hilbert space) then $\Braket{f|\hat{Q}g}=\Braket{\hat{Q}f|g}$ for all f and g.}\\
+
+\textbf{Solution:-}
+$$\Braket{h|\hat{Q}h}=\Braket{\hat{Q}h|h}$$ for all h in Hilbert space.\\
+ let $h=f+cg$\\
+ we get,\\
+ $$
+ \Braket{h|\hat{Q}h}=\Braket{f|\hat{Q}f}+c^{*}\Braket{g|\hat{Q}f}+c\Braket{f|\hat{Q}g}+cc^{*}\Braket{g|\hat{Q}g}$$\\
+ put c=1,
+\begin{equation}
+\Braket{h|\hat{Q}h}=\Braket{f|\hat{Q}f}+\Braket{g|\hat{Q}f}+\Braket{f|\hat{Q}g}+\Braket{g|\hat{Q}g}
+\end{equation}\\
+put c=i,
+\begin{equation}
+\Braket{h|\hat{Q}h}=\Braket{f|\hat{Q}f}-i\Braket{g|\hat{Q}f}+i\Braket{f|\hat{Q}g}+\Braket{g|\hat{Q}g}
+\end{equation}\\
+By (1) and (2)\\
+\begin{equation}
+\Braket{g|\hat{Q}f}+\Braket{f|\hat{Q}g}=i\Braket{f|\hat{Q}g}-i\Braket{g|\hat{Q}f}
+\end{equation}
+
+$$\Braket{\hat{Q}h|h}=\Braket{\hat{Q}f|f}+c\Braket{\hat{Q}g|f}+c^{*}\Braket{\hat{Q}f|g}+cc^{*}\Braket{\hat{Q}g|g}$$
+put c=1,\\
+\begin{equation}
+\Braket{\hat{Q}h|h}=\Braket{\hat{Q}f|f}+\Braket{\hat{Q}g|f}+\Braket{\hat{Q}f|g}+\Braket{\hat{Q}g|g}
+\end{equation}\\
+put c=i,\\
+\begin{equation}
+\Braket{h|\hat{Q}h}=\Braket{\hat{Q}f|f}-i\Braket{\hat{Q}g|f}+i\Braket{\hat{Q}f|g}+\Braket{\hat{Q}g|g}
+\end{equation}\\
+By (4) and (5)\\
+\begin{equation}
+\Braket{\hat{Q}g|f}+\Braket{\hat{Q}f|g}=i\Braket{\hat{Q}f|g}-i\Braket{\hat{Q}g|f}
+\end{equation}
+compairing (3) and (6)\\
+\begin{equation}
+\Braket{g|\hat{Q}f}+\Braket{f|\hat{Q}g}=\Braket{\hat{Q}g|f}+\Braket{\hat{Q}f|g}
+\end{equation}
+and 
+\begin{equation}
+\Braket{f|\hat{Q}g}-\Braket{g|\hat{Q}f}=\Braket{\hat{Q}f|g}-\Braket{\hat{Q}g|f}
+\end{equation}
+by (7) and (8)\\
+$$\Braket{f|\hat{Q}g}=\Braket{\hat{Q}f|g}$$}
+
+\textcolor{blue}{ \textbf{PROBLEM 2(3.7a):-} Suppose that f(x) and g(x) are two eigenfunctions of an operator $\hat{Q}$,with the same eigenvalue q. Show that any linear combination of $f(x)$ and $g(x)$ is itself an eigenfunction of $\hat{Q}$, with eigen value q.}\\
+\textbf{Solution:-}\\
+\hspace*{2cm} Given $f(x)$ and $g(x)$ are two different eigenfunctions.\\
+Here, $\hat{Q}$ is operator and q is eigen value of both eigenfunction.\\
+$$\hat{Q}f(x)=qf(x)$$
+$$\hat{Q}g(x)=qg(x)$$
+Now, linear combination of $f(x)$ and $g(x)$ is $af(x)+bg(x).$\\
+Then,
+$$\hat{Q}(af(x)+bg(x))=a\hat{Q}f(x)+b\hat{Q}g(x)$$
+$$\hat{Q}(af(x)+bg(x))=aqf(x)+bqg(x)$$
+$$\hat{Q}(af(x)+bg(x))=q(af(x)+bg(x))$$
+So, linear combination of $f(x)$ and $g(x)$ is itself an eigenfunctions of $\hat{Q}$,with eigen value q.

@@ -1,0 +1,14 @@
+\contentsline {chapter}{\numberline {1}\leavevmode {\color {blue}Introduction}}{1}
+\contentsline {section}{\numberline {1.1}Definitions:-}{3}
+\contentsline {subsection}{\numberline {1.1.1}Wave function:-}{3}
+\contentsline {subsection}{\numberline {1.1.2}Bra-ket Notation:-}{3}
+\contentsline {subsection}{\numberline {1.1.3}Hilbert Space and inner product:-}{4}
+\contentsline {subsection}{\numberline {1.1.4}Expectation value:-}{5}
+\contentsline {subsection}{\numberline {1.1.5}Dirac delta function:-}{5}
+\contentsline {subsection}{\numberline {1.1.6}Hermition Operators:-}{6}
+\contentsline {chapter}{\numberline {2}\leavevmode {\color {blue} EIGENFUNCTIONS OF A HERMITIAN OPERATOR}}{10}
+\contentsline {section}{\numberline {2.1}\leavevmode {\color {blue}Discrete Spectra:-}}{10}
+\contentsline {section}{\numberline {2.2}\leavevmode {\color {blue}Continuous Spectra:-}}{19}
+\contentsline {chapter}{\numberline {3}\leavevmode {\color {blue}THE UNCERTAINTY PRINCIPLE}}{22}
+\contentsline {section}{\numberline {3.1}Proof of generalized uncertainty principle:-}{24}
+\contentsline {chapter}{Bibliography}{42}

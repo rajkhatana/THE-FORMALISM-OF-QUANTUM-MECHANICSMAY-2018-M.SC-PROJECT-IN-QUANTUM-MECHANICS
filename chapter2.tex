@@ -1,0 +1,155 @@
+\chapter{\textcolor{blue}{ EIGENFUNCTIONS OF A HERMITIAN OPERATOR}}
+The collection of all the eigenvalues of an operator is called spectram. Eigenfunctions of Hermitian operators categories two part which depends on spectrum.
+\section{\textcolor{blue}{Discrete Spectra:-}}
+\hspace*{4cm}When all eigenvalues are separated by each other, then Spectra called  Discrete Spectra. Eigenvalues of Discrete Spectra lies in Hilbert space. In Discrete Spectra inner products are guaranteed to exist.\\
+Eg:- Harmonic oscillator.\\
+\vspace*{2cm} Mathematically,the normalizable eigenfunctions of a Hermitian operator have two important properties.\\
+\textbf{Theorem 1: Their eigenvalues are real.}\\
+
+\textbf{Proof:} Let, $\hat{Q}$ is Hermitian operator and q is eigenvalue, apply Hermitian operator on eigenfunction function f.\\
+$$\hat{Q}f=qf.$$
+Given $\hat{Q}$ is Hermitian operator$$\Braket{f|\hat{Q}f}=\Braket{\hat{Q}f|f}$$
+put $\hat{Q}f=qf$ ,$$\Braket{f|qf}=\Braket{qf|f}$$
+$$q\Braket{f|f}={q}^{*}\Braket{f|f}$$
+and also given that f is normalizable eigenfunctions so, $\Braket{f|f}=1.$
+$$q=q^{*}$$
+So, eigenvalues q are real.\\
+\textbf{Theorem 2: Eigenfunctions belonging to distinct eigenvalues are orthogonal.}\\
+
+\textbf{Proof:} Let, $\hat{Q}$ is hermitian operator and q and q' are eigenvalues, apply hermitian operator on eigenfunction function f and g.\\
+$\hat{Q}f=qf$  and  $\hat{Q}g=q'g$
+Given $\hat{Q}$ is hermitian operator then $$\Braket{f|\hat{Q}g}=\Braket{\hat{Q}f|g}$$
+put $\hat{Q}f=qf$ and $\hat{Q}g=q'g$,\\
+$$\Braket{f|q'g}=\Braket{qf|g}$$
+$$q'\Braket{f|g}=q^{*}\Braket{f|g}.$$
+By earlier theorem $q=q^{*}$,$$q'\Braket{f|g}=q\Braket{f|g}.$$
+Given q and q' are q distinct eigenvalues,so $q\neq{q'}$\\
+So, it must be $$\Braket{f|g}=0$$
+\newpage
+\textcolor{blue}{ \textbf{PROBLEM 3(3.7b):-} Check that $f(x)=e^{x}$ and $g(x)=e^{-x}$ are eigenfunctions of the operator $\dfrac{d^2}{dx^2}$, with the same eigenvalue.Construct two linear combination of $ f(x) $ and $ g(x) $ that are orthogonal eigenfunctions on the interval $ (-1,1) $.}\\
+\textbf{Solution:-} Given $f(x)=e^x$ and $g(x)=e^{-x}$ are eigenfunctions, and $\hat{Q}=\dfrac{d^2}{dx^2}$  is operator.\\
+$$\hat{Q}f(x)=\frac{d^2f(x)}{dx^2}=\frac{d^2{e^{x}}}{dx^2}=e^{x}$$
+$$\hat{Q}f(x)=\frac{d^2g(x)}{dx^2}=\frac{d^2{e^{-x}}}{dx^2}=e^{-x}$$
+Here, 1 is eigenvalue of both eigenfunctions,\\
+$$\hat{Q}f(x)=f(x)$$
+$$\hat{Q}g(x)=g(x)$$
+Let $F(x)=Ae^x+Be^{-x}$ and $G(x)=Ce^x+De^{-1}$\\
+First we show that $\hat{Q}$ is hermitian operator\\
+$$\Braket{f|\hat{Q}g}=\int{f^{*}\hat{Q}gdx}$$
+$$\Braket{f|\hat{Q}g}=\int{f^{*}\frac{d^2{g}}{dx^2}dx}$$
+Apply  two time integrate by part and use wave function must go to zero as $x\rightarrow{\pm\infty}$
+$$\Braket{f|\hat{Q}g}=-\int{\frac{df^{*}}{dx}\frac{d{g}}{dx}dx}$$
+$$\Braket{f|\hat{Q}g}=\int{\frac{d^2{f^{*}}}{dx^2}{g}dx}$$
+$$\Braket{f|\hat{Q}g}=\Braket{\hat{Q}f|g}$$
+So, $\hat{Q}=\dfrac{d^2x}{dx^2}$ is hermitian operator.\\
+For orthogonalty of $F(x)$ and $G(x)$ we show that  eigenvalues of $F(x)$ and $G(x)$ are distinct.\\
+By appling operator $\hat{Q}=\frac{d^2}{dx^2}$\\
+$$\hat{Q}F(x)=\frac{d^2(Ae^x+Be^{-x})}{dx^2}$$
+$$\hat{Q}F(x)=Ae^x+Be^{-x}=pF(x)$$
+$$\hat{Q}G(x)=\frac{d^2(Ce^x+De^{-x})}{dx^2}$$
+$$\hat{Q}G(x)=Ce^x+De^{-x}=pG(x)$$ 
+So, for distinct eigenvalue,$$Ae^x+Be^{-x}\neq Ce^x+De^{-x}$$
+For this $A\neq C$ or  $B\neq D$, two linear combination of $ f(x) $ and $ g(x) $ that are orthogonal eigenfunctions on the interval $ (-1,1) $.\\
+Let, A=C=1/2, B=1/2 and D=1/2 then $F(x)=\frac{1}{2}e^x+e\frac{1}{2}e^{-x}$ and $G(x)=\frac{1}{2}e^x+\frac{-1}{2}e^{-x},$\\
+then $f(x)=cosh(x)$ and $g(x)=sinh(x)$
+these are orthogonal.
+\newpage
+\textcolor{blue}{ \textbf{PROBLEM 4(8.1):-}Check that eigenvalues of the  operator $\hat{Q}=i\frac{d}{d\phi}$ are real. And also show that the eigenfunctions (for distinct eigenvalues) are orthogonal.}\\
+\textbf{Solution:-} $f(x)$  is an eigenfunction of $\hat{Q}=i\frac{d}{d\phi}$,with eigen value q on the finite interval $0 \leq \phi\leq 2\pi$.\\
+$$\hat{Q}f(x)=qf(x)$$
+$$i\frac{d{f(x})}{d\phi}=qf(x)$$
+$$\frac{d{f(x)}}{f(x)}=\frac{q}{i}d\phi$$
+$$\log(f(x))=\frac{q\phi}{i}+C$$
+$$f(\phi)=Ae^{-iq\phi}$$
+ $f(\phi+2\pi)=f(\phi)$ then $e^{-2{\pi}iq\phi}=1$\\
+ $q=0,\pm{1},\pm{2},\pm{3},\pm{4},\pm{5}\cdots$, which are real.\\
+ \textbf{Other approach}\\
+ First we show that $\hat{Q}$ is hermitian operator\\
+$$\Braket{f|\hat{Q}g}=\int{f^{*}\hat{Q}gdx}$$
+$$\Braket{f|\hat{Q}g}=\int{f^{*}\frac{d{g}}{dx}dx}$$
+Apply integrate by part and use wave function must go to zero as $x\rightarrow{\pm\infty}$
+$$\Braket{f|\hat{Q}g}=\int{\frac{d{f^{*}}}{dx}{g}dx}$$
+$$\Braket{f|\hat{Q}g}=\Braket{\hat{Q}f|g}$$
+So, $\hat{Q}=\dfrac{d^2x}{dx^2}$ is hermitian operator.\\
+
+ Then $q\Braket{f|f}=q^{*}\Braket{f|f}$.\\
+ If we can show that $\Braket{f|f}\neq {0}$\\
+ $$\Braket{f|f}=\int_{0}^{2\pi}f^{*}f{d\phi} $$
+ $$\Braket{f|f}=\int_{0}^{2\pi}Ae^{-iq\phi}Ae^{iq\phi}{d\phi} $$
+  $$\Braket{f|f}=A^{2}\int_{0}^{2\pi}{1}{d\phi} $$
+  $$\Braket{f|f}=2{\pi}A^{2}$$
+  For $A\neq {0}$,$\Braket{f|f}\neq {0}$\\
+  So, $q=q^{*}$. Hence $q$ is real.\\ 
+  Now,\\ 
+  for orthogonality if we show that $\Braket{f|g}=0$.\\
+  Let, $f=Ae^{-iq\phi}$ and $g=Be^{-iq'\phi}$\\
+  $$\Braket{f|g}=\int_{0}^{2\pi}A^{*}e^{iq\phi}Be^{-iq'\phi}{d\phi} $$
+  $$\Braket{f|g}=\int_{0}^{2\pi}A^{*}Be^{i(q-q')\phi}{d\phi} $$
+  $$\Braket{f|g}=\frac{A^{*}B}{i(q-q')}\big[e^{i(q-q')2\pi}-1 \big]$$\\
+  Here q and q' are integers.\\ So, $\big[e^{i(q-q')2\pi}-1 \big]=0$ \\
+  then $\Braket{f|g}=0$\\
+  Thus, the eigenfunctions (for distinct eigenvalues) are orthogonal.\\
+  
+ \textcolor{blue}{ \textbf{PROBLEM 5(8.3b):-}Check that eigenvalues of the  operator $\hat{Q}=\frac{d^2}{d{\phi}^2}$ are real.And also show that the eigenfunctions (for distinct eigenvalues) are orthogonal.}\\
+ \textbf{Solution:-}\\
+ \hspace*{2cm}$f(x)$  is an eigenfunction of $\hat{Q}=\frac{d^2}{d{\phi}^2}$,with eigen value q on the finite interval $0 \leq \phi\leq 2\pi$.\\
+ First we show that $\hat{Q}$ is hermitian operator\\
+$$\Braket{f|\hat{Q}g}=\int{f^{*}\hat{Q}gdx}$$
+$$\Braket{f|\hat{Q}g}=\int_{0}^{2\pi}{f^{*}\frac{d^2{g}}{dx^2}dx}$$
+Apply  two time integrate by part
+$$\Braket{f|\hat{Q}g}=f^{*}\frac{dg}{d\phi}\Big|_{0}^{2\pi}-\int_{0}^{2\pi}{\frac{df^{*}}{dx}\frac{d{g}}{dx}dx}$$
+$$\Braket{f|\hat{Q}g}=f^{*}\frac{dg}{d\phi}\Big|_{0}^{2\pi}-\frac{df^{*}}{d\phi}g\Big|_{0}^{2\pi}+\int_{0}^{2\pi}{\frac{d^2{f^{*}}}{dx^2}{g}dx}$$
+$$\Braket{f|\hat{Q}g}=\int_{0}^{2\pi}{\frac{d^2{f^{*}}}{dx^2}{g}dx}$$
+$$\Braket{f|\hat{Q}g}=\Braket{\hat{Q}f|g}$$
+So, $\hat{Q}=\dfrac{d^2x}{dx^2}$ is hermitian operator.\\
+$$\hat{Q}f(x)=qf(x)$$
+$$\frac{d^2{f(x})}{d{\phi}^2}=qf(x)$$
+$$\frac{d^2}{{d\phi}^2}(e^{ik\phi})=-k^2e^{ik\phi}$$
+put $f(0)=f(2\pi)$,\\
+$$e^{ik{2\pi}}=1$$
+ $k=0$,$\pm1$,$\pm2$,$\pm3\hdots$\\
+So, all eigen values q are real.\\
+ Now,\\ 
+  for orthogonality if we show that $\Braket{f|g}=0$\\
+  for $k_{1}\neq k_{2}$
+  $$\Braket{f|g}=\int_{0}^{2\pi}\big(e^{ik_{1}\phi}\big)^{*}e^{ik_{2}\phi}d\phi$$
+  $$\Braket{f|g}=\int_{0}^{2\pi}e^{i(k_{2}-k_{1})\phi}d\phi=0.$$
+  Then $\Braket{f|g}=0$\\
+  Thus, the eigenfunctions (for distinct eigenvalues) are orthogonal.\\
+  \newpage
+  \section{\textcolor{blue}{Continuous Spectra:-}}
+  \hspace*{5cm} When all eigenvalues are fill out an entire range then the Spectra is called Continuous Spectra. Eigenfunctions of Continuous Spectra are not normalizable, and they do not represent possible wave functions.In Continuous Spectra inner product are guaranteed to not exist.\\
+  Eg:- Free particle Hamiltonian.\\
+  We approach this case through a specific example.\\
+ \textcolor{blue}{ \textbf{PROBLEM 6:-} Find the eigenfunctions and eigenvalues of the momentum operator.}\\
+  \textbf{Solution:-}\\
+  \hspace*{3cm} let $f_{p}(x)\Rightarrow$ eigenfnuction.\\
+  $p \Rightarrow$ eigenvalue.\\
+  We know that  momentum operator is $\hat{p}=\frac{\hbar}{i}\frac{d}{dx}.$\\
+  Now ,\\
+  $$\hat{p}f_{p}(x)={p}f_{p}(x)$$
+   $$\frac{\hbar}{i}\frac{d{f_{p}(x)}}{dx}={p}f_{p}(x)$$
+   $$\frac{d{f_{p}(x)}}{dx}=\frac{i}{\hbar}{p}f_{p}(x)$$
+   $$f_{p}(x)= Ae^{{ipx}/{\hbar}}$$
+   $$\Braket{f_{p}|f_{p}}=\int_{-\infty}^{\infty}f^{*}f{dx} $$
+ $$\Braket{f_{p}|f_{p}}=\int_{-\infty}^{\infty}A{*}e^{-ipx/\hbar}Ae^{ipx/\hbar}{dx} $$
+ $$\Braket{f_{p}|f_{p}}=|A|^{2}\int_{-\infty}^{\infty}{1}dx$$
+ $$\Braket{f_{p}|f_{p}}=\infty.$$
+ So, that is not square integrable,for any values of p, momentum operator has no eigenvalues in Hilbert space of square integrable function.\\
+ If we restrict ourselve to real eigenvalues\\
+  $$\Braket{f_{p'}|f_{p}}=|A|^{2}\int_{-\infty}^{\infty}{e^{i(p-p')x/\hbar}}{dx} $$
+  We know that  $\delta(x)=\frac{1}{2\pi}\int_{-\infty}^{\infty}{e^{ikx}}dk$ and $\delta{(cx)}=\frac{1}{|c|}\delta{(x)}$.\\
+  so, $$\delta\Big(\frac{1}{\hbar}\delta{(x)}\Big)=\hbar\delta{(x)}$$
+   $$\therefore \int_{-\infty}^{\infty}{e^{i(p-p')x/\hbar}}{dx}=2\pi\delta\Big((p-p')/\hbar\Big) $$
+    $$ \int_{-\infty}^{\infty}{e^{i(p-p')x/\hbar}}{dx}=2\pi\hbar\delta((p-p') $$
+  $$\Braket{f_{p'}|f_{p}}=|A|^{2}2{\pi}\hbar\delta(p'-p)$$
+  Let, $A=1/\sqrt{2\pi\hbar},$\\so that\\
+  $$f_{p}(x)=1/\sqrt{2\pi\hbar}e^{{ipx}/{\hbar}}$$
+  $$\Braket{f_{p'}|f_{p}}=\delta(p'-p)$$
+  here,\\
+  $$\delta(p'-p)=\begin{cases}
+  \infty  &{if p=p',}\\
+  0  &{if p\neq p'.}
+  \end{cases}$$
+  with $\int_{-\infty}^{\infty}\delta{(x)}dx=1$\\
+  That is Dirac orthonormality.\\
